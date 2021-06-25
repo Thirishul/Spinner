@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: border-box;
+}
+
+#wrap {
+
+    margin: 10%;
+    text-align: center;
+}
+
+
+body {
+
+    background-color: black;
+}
+
+h1 {
+
+    background-color: gold;
+    text-align: center;
+}
+
+div {
+    animation: 1s lo infinite ease-in-out;
+}
+
+.spin {
+    margin: 10%;
+    width: 10rem;
+    height: 10rem;
+    border: 3px solid gold;
+    border-top-color: red;
+    display: inline-block;
+    border-radius: 50%;
+    animation: 1s spin infinite ease-in-out;
+}
+
+@keyframes lo {
+    to {
+        transform: scaleY(23px);
+
+    }
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
